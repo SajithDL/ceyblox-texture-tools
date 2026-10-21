@@ -1,0 +1,19 @@
+schema_version = "1.0.0"
+id = "ceyblox_texture_tools"
+version = "1.0.0-beta.4"
+name = "Ceyblox Texture Tools"
+tagline = "Batch convert, resize and relink material textures"
+maintainer = "SajithDL / Ceyblox"
+type = "add-on"
+website = "https://github.com/SajithDL/ceyblox-texture-tools"
+tags = ["Material", "Import-Export"]
+blender_version_min = "4.2.0"
+license = ["SPDX:GPL-3.0-or-later"]
+platforms = ["windows-x64"]
+
+[permissions]
+files = "Read textures and write converted files and conversion manifests"
+network = "Install Pillow and NumPy from PyPI only when requested"
+
+[build]
+paths_exclude_pattern = ["__pycache__/", "*.pyc"]

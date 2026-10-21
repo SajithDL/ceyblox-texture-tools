@@ -31,11 +31,9 @@ Blender's extension validator accepted the built install ZIP and its manifest. T
 
 ## Remaining manual checks
 
-- Visual N-panel layout and interactive cancellation in a normal Blender session.
+- Interactive cancellation in a normal Blender session.
 - First-time image-engine download on a clean Blender installation.
 - Blender 4.2/4.5 compatibility; the manifest minimum is 4.2, but only 5.2.2 was executed locally.
 - FiveM and RedM in-game tests against representative shaders and exports.
 - BC5 loading/interpretation in each target application.
 - Complex custom shader graphs, unusual ICC profiles and uncommon codecs.
-
-The standalone engine tests also passed on Windows and Linux in CI. The shipped extension currently targets Windows x64.

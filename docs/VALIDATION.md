@@ -8,18 +8,18 @@ Python 3.10, Pillow 12.0.0 and NumPy 2.2.6: **14 tests passed**.
 
 Coverage includes:
 
-- Real BC1, BC2, BC3, BC5 and uncompressed DDS decoding.
-- DDS mip-count headers, complete block payload sizes and single-level output.
-- BC5 UNORM header and array-size fields.
-- Alpha auto-selection and padded-image alpha.
-- Rejection of destructive paths, existing outputs and accidental alpha loss.
-- Exact four-channel base-pixel preservation for uncompressed packed data.
-- DDS-to-PNG conversion and all six output formats.
-- Fit/Fill/Stretch geometry and matching UV transforms.
-- Gamma-correct color resizing versus independent data-channel resizing.
-- Normal-vector normalization and independent alpha filtering.
-- High bit-depth PNG rejection and DDS block-size validation.
-- Per-image failure reporting without false conversion success.
+* Real BC1, BC2, BC3, BC5 and uncompressed DDS decoding.
+* DDS mip-count headers, complete block payload sizes and single-level output.
+* BC5 UNORM header and array-size fields.
+* Alpha auto-selection and padded-image alpha.
+* Rejection of destructive paths, existing outputs and accidental alpha loss.
+* Exact four-channel base-pixel preservation for uncompressed packed data.
+* DDS-to-PNG conversion and all six output formats.
+* Fit/Fill/Stretch geometry and matching UV transforms.
+* Gamma-correct color resizing versus independent data-channel resizing.
+* Normal-vector normalization and independent alpha filtering.
+* High bit-depth PNG rejection and DDS block-size validation.
+* Per-image failure reporting without false conversion success.
 
 ## Blender integration
 
@@ -31,9 +31,10 @@ Blender's extension validator accepted the built install ZIP and its manifest. T
 
 ## Remaining manual checks
 
-- Interactive cancellation in a normal Blender session.
-- First-time image-engine download on a clean Blender installation.
-- Blender 4.2/4.5 compatibility; the manifest minimum is 4.2, but only 5.2.2 was executed locally.
-- FiveM and RedM in-game tests against representative shaders and exports.
-- BC5 loading/interpretation in each target application.
-- Complex custom shader graphs, unusual ICC profiles and uncommon codecs.
+* Interactive cancellation in a normal Blender session.
+* First-time image-engine download on a clean Blender installation.
+* Blender 4.2/4.5 compatibility; the manifest minimum is 4.2, but only 5.2.2 was executed locally.
+* FiveM and RedM in-game tests against representative shaders and exports.
+* BC5 loading/interpretation in each target application.
+* Complex custom shader graphs, unusual ICC profiles and uncommon codecs. 
+
